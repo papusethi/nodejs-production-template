@@ -3,7 +3,9 @@
 	"version": "1.0.0",
 	"main": "index.js",
 	"scripts": {
-		"start": "node index.js"
+		"start": "node index.js",
+		"test": "node test.js",
+		"prepare": "husky"
 	},
 	"repository": {
 		"type": "git",
@@ -16,5 +18,9 @@
 		"url": "https://github.com/papusethi/nodejs-production-template/issues"
 	},
 	"homepage": "https://github.com/papusethi/nodejs-production-template#readme",
-	"description": ""
+	"description": "",
+	"devDependencies": {
+		"husky": "^9.1.7",
+		"lint-staged": "^15.4.3"
+	}
 }
