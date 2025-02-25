@@ -1,3 +1,4 @@
+import cors from 'cors';
 import express from 'express';
 import helmet from 'helmet';
 import path from 'path';
@@ -10,6 +11,13 @@ const app = express();
 
 // Middlewares
 app.use(helmet());
+app.use(
+  cors({
+    methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
+    origin: ['https://client.com'], // For client applicaiton
+    credentials: true // For cookies
+  })
+);
 app.use(express.json());
 app.use(express.static(path.join(__dirname, '../public')));
 
