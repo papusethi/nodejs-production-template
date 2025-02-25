@@ -41,7 +41,7 @@ const consoleLogFormat = format.printf((info) => {
   });
 
   // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
-  const customLog = `${customLevel} [${customTimestamp}] ${customMessage}\n${magenta('META')} ${customMeta}`;
+  const customLog = `${customLevel} [${customTimestamp}] ${customMessage}\n${magenta('META')} ${customMeta}\n`;
 
   return customLog;
 });
