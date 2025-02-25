@@ -4,7 +4,7 @@
   "main": "src/server.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon src/server.ts",
-    "dist": "npx tsc",
+    "build": "npx tsc",
     "start": "cross-env NODE_ENV=production node dist/server.js",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
